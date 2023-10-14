@@ -1,0 +1,1256 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20232.23.0909.1159                               -->
+<workbook original-version='18.1' source-build='2023.2.2 (20232.23.0909.1159)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='Housing prices Extract' inline='true' name='federated.08lpiyg07437cf1cdccnf1ct275l' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Housing prices' name='hyper.0vhn9f204k4evm1el95pi1m8vbok'>
+            <connection authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/santh/OneDrive/Desktop/Housing prices.hyper' default-settings='yes' server='' sslmode='' username='tableau_internal_user' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='hyper.0vhn9f204k4evm1el95pi1m8vbok' name='Extract' table='[Extract].[Extract]' type='table' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='hyper.0vhn9f204k4evm1el95pi1m8vbok' name='Extract' table='[Extract].[Extract]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>Price</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Price]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Price</remote-alias>
+            <ordinal>0</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1376</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Area</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Area]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Area</remote-alias>
+            <ordinal>1</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>1124</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Location</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Location]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Location</remote-alias>
+            <ordinal>2</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>266</approx-count>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>No. of Bedrooms</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[No. of Bedrooms]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>No. of Bedrooms</remote-alias>
+            <ordinal>3</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>5</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Resale</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Resale]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Resale</remote-alias>
+            <ordinal>4</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>2</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MaintenanceStaff</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MaintenanceStaff]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>MaintenanceStaff</remote-alias>
+            <ordinal>5</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gymnasium</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Gymnasium]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Gymnasium</remote-alias>
+            <ordinal>6</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SwimmingPool</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SwimmingPool]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>SwimmingPool</remote-alias>
+            <ordinal>7</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LandscapedGardens</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LandscapedGardens]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>LandscapedGardens</remote-alias>
+            <ordinal>8</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>JoggingTrack</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[JoggingTrack]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>JoggingTrack</remote-alias>
+            <ordinal>9</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>RainWaterHarvesting</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[RainWaterHarvesting]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>RainWaterHarvesting</remote-alias>
+            <ordinal>10</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IndoorGames</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[IndoorGames]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>IndoorGames</remote-alias>
+            <ordinal>11</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ShoppingMall</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ShoppingMall]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>ShoppingMall</remote-alias>
+            <ordinal>12</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Intercom</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Intercom]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Intercom</remote-alias>
+            <ordinal>13</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SportsFacility</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SportsFacility]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>SportsFacility</remote-alias>
+            <ordinal>14</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ATM</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ATM]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>ATM</remote-alias>
+            <ordinal>15</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ClubHouse</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ClubHouse]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>ClubHouse</remote-alias>
+            <ordinal>16</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>School</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[School]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>School</remote-alias>
+            <ordinal>17</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>24X7Security</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[24X7Security]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>24X7Security</remote-alias>
+            <ordinal>18</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PowerBackup</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PowerBackup]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>PowerBackup</remote-alias>
+            <ordinal>19</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CarParking</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CarParking]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>CarParking</remote-alias>
+            <ordinal>20</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>StaffQuarter</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[StaffQuarter]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>StaffQuarter</remote-alias>
+            <ordinal>21</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Cafeteria</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Cafeteria]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Cafeteria</remote-alias>
+            <ordinal>22</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MultipurposeRoom</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MultipurposeRoom]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>MultipurposeRoom</remote-alias>
+            <ordinal>23</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Hospital</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Hospital]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Hospital</remote-alias>
+            <ordinal>24</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>WashingMachine</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[WashingMachine]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>WashingMachine</remote-alias>
+            <ordinal>25</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gasconnection</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Gasconnection]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Gasconnection</remote-alias>
+            <ordinal>26</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AC</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AC]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>AC</remote-alias>
+            <ordinal>27</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wifi</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Wifi]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Wifi</remote-alias>
+            <ordinal>28</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>2</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Children&apos;splayarea</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Children&apos;splayarea]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Children&apos;splayarea</remote-alias>
+            <ordinal>29</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LiftAvailable</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[LiftAvailable]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>LiftAvailable</remote-alias>
+            <ordinal>30</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BED</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BED]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>BED</remote-alias>
+            <ordinal>31</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>VaastuCompliant</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[VaastuCompliant]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>VaastuCompliant</remote-alias>
+            <ordinal>32</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Microwave</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Microwave]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Microwave</remote-alias>
+            <ordinal>33</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>GolfCourse</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[GolfCourse]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>GolfCourse</remote-alias>
+            <ordinal>34</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TV</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TV]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>TV</remote-alias>
+            <ordinal>35</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DiningTable</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DiningTable]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>DiningTable</remote-alias>
+            <ordinal>36</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Sofa</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Sofa]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Sofa</remote-alias>
+            <ordinal>37</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wardrobe</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Wardrobe]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Wardrobe</remote-alias>
+            <ordinal>38</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>2</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Refrigerator</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Refrigerator]</local-name>
+            <parent-name>[Extract]</parent-name>
+            <remote-alias>Refrigerator</remote-alias>
+            <ordinal>39</ordinal>
+            <family>Bangalore.csv</family>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <approx-count>3</approx-count>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Car Parking' datatype='integer' name='[CarParking]' role='measure' type='quantitative' />
+      <column caption='Club House' datatype='integer' name='[ClubHouse]' role='measure' type='quantitative' />
+      <column caption='Dining Table' datatype='integer' name='[DiningTable]' role='measure' type='quantitative' />
+      <column caption='Golf Course' datatype='integer' name='[GolfCourse]' role='measure' type='quantitative' />
+      <column caption='Indoor Games' datatype='integer' name='[IndoorGames]' role='measure' type='quantitative' />
+      <column caption='Jogging Track' datatype='integer' name='[JoggingTrack]' role='measure' type='quantitative' />
+      <column caption='Landscaped Gardens' datatype='integer' name='[LandscapedGardens]' role='measure' type='quantitative' />
+      <column caption='Lift Available' datatype='integer' name='[LiftAvailable]' role='measure' type='quantitative' />
+      <column caption='Maintenance Staff' datatype='integer' name='[MaintenanceStaff]' role='measure' type='quantitative' />
+      <column caption='Multipurpose Room' datatype='integer' name='[MultipurposeRoom]' role='measure' type='quantitative' />
+      <column caption='Power Backup' datatype='integer' name='[PowerBackup]' role='measure' type='quantitative' />
+      <column caption='Rain Water Harvesting' datatype='integer' name='[RainWaterHarvesting]' role='measure' type='quantitative' />
+      <column caption='Shopping Mall' datatype='integer' name='[ShoppingMall]' role='measure' type='quantitative' />
+      <column caption='Sports Facility' datatype='integer' name='[SportsFacility]' role='measure' type='quantitative' />
+      <column caption='Staff Quarter' datatype='integer' name='[StaffQuarter]' role='dimension' type='quantitative' />
+      <column caption='Swimming Pool' datatype='integer' name='[SwimmingPool]' role='measure' type='quantitative' />
+      <column caption='Vaastu Compliant' datatype='integer' name='[VaastuCompliant]' role='measure' type='quantitative' />
+      <column caption='Washing Machine' datatype='integer' name='[WashingMachine]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Extract' datatype='table' name='[__tableau_internal_object_id__].[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]' role='measure' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/Users/santh/OneDrive/Desktop/Housing prices Extract.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='10/08/2023 03:31:35 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='Housing prices Extract' increment-value='%null%' refresh-type='create' rows-inserted='6207' timestamp-start='2023-10-08 03:31:33.964' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Price</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Price]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Price</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1376</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Area</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Area]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Area</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1124</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Location</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Location]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Location</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>266</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>No. of Bedrooms</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[No. of Bedrooms]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>No. of Bedrooms</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Resale</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Resale]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Resale</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MaintenanceStaff</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[MaintenanceStaff]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MaintenanceStaff</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gymnasium</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Gymnasium]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gymnasium</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SwimmingPool</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[SwimmingPool]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SwimmingPool</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LandscapedGardens</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[LandscapedGardens]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LandscapedGardens</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>JoggingTrack</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[JoggingTrack]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>JoggingTrack</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>RainWaterHarvesting</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[RainWaterHarvesting]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>RainWaterHarvesting</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>IndoorGames</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[IndoorGames]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>IndoorGames</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ShoppingMall</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ShoppingMall]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ShoppingMall</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Intercom</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Intercom]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Intercom</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>SportsFacility</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[SportsFacility]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>SportsFacility</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ATM</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ATM]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ATM</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ClubHouse</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ClubHouse]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ClubHouse</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>School</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[School]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>School</remote-alias>
+              <ordinal>17</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>24X7Security</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[24X7Security]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>24X7Security</remote-alias>
+              <ordinal>18</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>PowerBackup</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[PowerBackup]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>PowerBackup</remote-alias>
+              <ordinal>19</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CarParking</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[CarParking]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CarParking</remote-alias>
+              <ordinal>20</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>StaffQuarter</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[StaffQuarter]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>StaffQuarter</remote-alias>
+              <ordinal>21</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Cafeteria</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Cafeteria]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Cafeteria</remote-alias>
+              <ordinal>22</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MultipurposeRoom</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[MultipurposeRoom]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MultipurposeRoom</remote-alias>
+              <ordinal>23</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Hospital</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Hospital]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Hospital</remote-alias>
+              <ordinal>24</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>WashingMachine</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[WashingMachine]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>WashingMachine</remote-alias>
+              <ordinal>25</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Gasconnection</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Gasconnection]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Gasconnection</remote-alias>
+              <ordinal>26</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>AC</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[AC]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>AC</remote-alias>
+              <ordinal>27</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Wifi</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Wifi]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Wifi</remote-alias>
+              <ordinal>28</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Children&apos;splayarea</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Children&apos;splayarea]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Children&apos;splayarea</remote-alias>
+              <ordinal>29</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LiftAvailable</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[LiftAvailable]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LiftAvailable</remote-alias>
+              <ordinal>30</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>BED</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[BED]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>BED</remote-alias>
+              <ordinal>31</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>VaastuCompliant</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[VaastuCompliant]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>VaastuCompliant</remote-alias>
+              <ordinal>32</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Microwave</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Microwave]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Microwave</remote-alias>
+              <ordinal>33</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>GolfCourse</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[GolfCourse]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>GolfCourse</remote-alias>
+              <ordinal>34</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>TV</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[TV]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>TV</remote-alias>
+              <ordinal>35</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DiningTable</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[DiningTable]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>DiningTable</remote-alias>
+              <ordinal>36</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Sofa</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Sofa]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Sofa</remote-alias>
+              <ordinal>37</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Wardrobe</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Wardrobe]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Wardrobe</remote-alias>
+              <ordinal>38</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Refrigerator</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Refrigerator]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Refrigerator</remote-alias>
+              <ordinal>39</ordinal>
+              <family>Bangalore.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Extract' id='Extract (Extract.Extract)_63BEBE647CBA414B9D85C794B310687D'>
+            <properties context=''>
+              <relation connection='hyper.0vhn9f204k4evm1el95pi1m8vbok' name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{A25D040D-E8B0-4058-88F8-2D4515DA9DEA}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='30'>
+            <card type='columns' />
+          </strip>
+          <strip size='30'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{24470EAB-5F4E-4F40-884D-8C59547B3A79}' />
+    </window>
+  </windows>
+</workbook>
